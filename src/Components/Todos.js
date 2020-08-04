@@ -5,7 +5,7 @@ class Todos extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      userId: 1,
+      userId: 2,
       items: [],
       itemsCopy: [],
       word: "",
@@ -97,15 +97,24 @@ class Todos extends React.Component {
       );
     }
     return (
-      <>
-        <div>
-          <label htmlFor="search">Wyszukaj</label>
-          <input id="search" type="text" onChange={this.handleChange} />
+      <div className="container">
+        <div className="form-group mt-2">
+          <input
+            placeholder="Find TODO by title"
+            className="form-control col-sm-4"
+            id="search"
+            type="text"
+            onChange={this.handleChange}
+          />
         </div>
         <div>
-          <label htmlFor="sort">Sort</label>
-          <select id="sort" onChange={this.handleSort}>
-            <option defaultValue disabled>
+          <select
+            defaultValue="sort"
+            className="form-control col-sm-4"
+            id="sort"
+            onChange={this.handleSort}
+          >
+            <option value="sort" disabled>
               Sort type
             </option>
             <option value="alphaA">Alphabetically - ASC</option>
@@ -114,8 +123,9 @@ class Todos extends React.Component {
             <option value="todo">Status - Todo</option>
           </select>
         </div>
+        <p className="h5 mt-3">TODO list of user: {this.state.userId}</p>
         <div>{itemsAsComponents}</div>
-      </>
+      </div>
     );
   }
 }

@@ -1,7 +1,6 @@
 body {
-  background-color: #121212;
-  color: white;
-  margin: 2vw 10vw;
+  background-color: #121212 !important;
+  color: white !important;
 }
 
 .App {
