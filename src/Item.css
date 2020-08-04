@@ -1,0 +1,11 @@
+.Item {
+  height: 50px;
+  border-bottom: 1px solid silver;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  gap: 10px;
+  position: relative;
+}

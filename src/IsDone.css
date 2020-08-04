@@ -1,0 +1,18 @@
+.IsDone {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.Not {
+  background-image: url("./images/cross_mark.svg");
+}
+
+.Is {
+  background-image: url("./images/done_mark.svg");
+}
